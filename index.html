@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header id="header">
+        <img id="header-img" src="https://github.com/SHAHSULTANS/Picture/raw/main/mylogo2.png
+" alt="Product Logo">
+        
+        <!-- Navigation Bar -->
+        <nav id="nav-bar">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Video Section -->
+        <section id="video-section">
+            <h2>Discover Our Product</h2>
+            <p>Watch this quick video to see how our product can simplify your daily tasks and enhance productivity.</p>
+            <iframe id="video" src="https://www.youtube.com/embed/example-video" title="Product Video" allowfullscreen></iframe>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Features</h2>
+            <p>Our product is packed with powerful features to streamline your workflow:</p>
+            <ul>
+                <li><strong>Easy Integration:</strong> Connect with the tools you already use.</li>
+                <li><strong>Customizable:</strong> Tailor the product to suit your unique needs.</li>
+                <li><strong>24/7 Support:</strong> Our team is here to help anytime.</li>
+            </ul>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing">
+            <h2>Pricing Plans</h2>
+            <p>Choose the plan that works best for you. No hidden fees, cancel anytime.</p>
+            <ul>
+                <li><strong>Basic Plan:</strong> $9.99/month - Perfect for individuals.</li>
+                <li><strong>Pro Plan:</strong> $19.99/month - Ideal for small teams.</li>
+                <li><strong>Enterprise Plan:</strong> Contact us for custom pricing.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to receive the latest updates, offers, and more. Enter your email below:</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <input type="submit" id="submit" value="Subscribe">
+            </form>
+        </section>
+    </main>
+
+
+    <div class="footer">
+        <div class="footer-content">
+            <img src="https://github.com/SHAHSULTANS/Picture/raw/main/mylogo2.png" alt="" class="footer-img">
+            <div class="footer-text">
+                &copy; <span id="year"></span>
+                <span id="username">Shanto.</span> All rights reserved.
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.getElementById("year").innerText=new Date().getFullYear();
+    </script>
+</body>
+</html>
